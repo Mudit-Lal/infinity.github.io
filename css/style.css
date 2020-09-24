@@ -2087,6 +2087,7 @@ border:solid 1px #ddd;
 	.de_light .de_count h3{
 	font-family:"Poppins";
 	font-weight:500;
+	color: #007878;
 	}
 	.de_count span{
 	text-transform:uppercase;
@@ -2097,7 +2098,9 @@ border:solid 1px #ddd;
 		margin:0 auto;
 		margin-bottom:20px;
 		width:100%;
-		font-weight:lighter !important;
+		background: -webkit-linear-gradient(#00A0B4, #a3b77c);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	.de_count.ultra-big h3{
