@@ -28,12 +28,16 @@
     <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/twentytwenty.css" type="text/css">
+  <link rel="stylesheet" href="css/slide.css" type="text/css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="images-event/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images-event/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images-event/favicon/favicon-16x16.png">
 <link rel="manifest" href="images-event/favicon/site.webmanifest">
 <link rel="mask-icon" href="images-event/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
@@ -267,120 +271,415 @@
             </section>
             <!-- section close -->
 
-			<!-- section begin -->
             <section id="section-speakers" class="text-light" data-bgimage="url(images-event/bg/1.jpg) fixed top center" data-stellar-background-ratio=".2">
-				<div class="wm wm-border dark wow fadeInDown">speakers</div>
-                <div class="container">
-                    <div class="row">
-						<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1>The Speakers</h1>
-                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single"></div>
-                        </div>
-
-						<div class="clearfix"></div>
-
-                       <div class="col-lg-3 col-md-6">
-							<!-- team member -->
-							<div class="de-team-list">
-								<div class="team-pic">
-									<img src="images-event/team/1.jpg" class="img-responsive" alt="" />
-								</div>
-								<div class="team-desc">
-									<h3>John Smith</h3>
-									<p class="lead">Expert Designer</p>
-									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- team close -->
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<!-- team member -->
-							<div class="de-team-list">
-								<div class="team-pic">
-									<img src="images-event/team/2.jpg" class="img-responsive" alt="" />
-								</div>
-								<div class="team-desc">
-									<h3>Michael Dennis</h3>
-									<p class="lead">Expert Designer</p>
-									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- team close -->
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<!-- team member -->
-							<div class="de-team-list">
-								<div class="team-pic">
-									<img src="images-event/team/3.jpg" class="img-responsive" alt="" />
-								</div>
-								<div class="team-desc">
-									<h3>Sarah Michelle</h3>
-									<p class="lead">Expert Designer</p>
-									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- team close -->
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<!-- team member -->
-							<div class="de-team-list">
-								<div class="team-pic">
-									<img src="images-event/team/4.jpg" class="img-responsive" alt="" />
-								</div>
-								<div class="team-desc">
-									<h3>Katty Wilson</h3>
-									<p class="lead">Expert Designer</p>
-									<div class="small-border"></div>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-									<div class="social">
-										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- team close -->
-						</div>
-
-						<div class="clearfix"></div>
-
+            <div class="wm wm-border dark wow fadeInDown">speakers</div>
+            <div class="container">
+                <div class="row">
+            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                        <h1>The Speakers</h1>
+                        <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                        <div class="spacer-single"></div>
                     </div>
-                </div>
-            </section>
-            <!-- section close -->
+
+            <div class="clearfix"></div>
+                        <div class="bs-example">
+                            <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+                            	<!-- Carousel indicators
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item carousel-fade">
+                                      <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/1.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>John Smith</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/2.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Michael Dennis</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/3.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Sarah Michelle</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/4.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Katty Wilson</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+                                    </div>
+                                    <div class="item carousel-fade">
+                                      <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/1.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>John Smith</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/2.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Michael Dennis</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/3.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Sarah Michelle</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/4.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Katty Wilson</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+                                    </div>
+                                    <div class="item carousel-fade">
+                                      <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/1.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>John Smith</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/2.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Michael Dennis</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/3.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Sarah Michelle</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/4.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Katty Wilson</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+                                    </div>
+                                    <div class="item carousel-fade">
+                                      <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/1.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>John Smith</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/2.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Michael Dennis</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/3.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Sarah Michelle</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+
+                          <div class="col-lg-3 col-md-6">
+                            <!-- team member -->
+                            <div class="de-team-list">
+                              <div class="team-pic">
+                                <img src="images-event/team/4.jpg" class="img-responsive" alt="" />
+                              </div>
+                              <div class="team-desc">
+                                <h3>Katty Wilson</h3>
+                                <p class="lead">Expert Designer</p>
+                                <div class="small-border"></div>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                <div class="social">
+                                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- team close -->
+                          </div>
+                                    </div>
+                                </div>
+                                <!-- Carousel nav -->
+                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                    <span class="fas fa-chevron-left glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                    <span class="fas fa-chevron-right glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
 
 
-			<!-- section begin -->
+			<!-- section begin
             <section id="section-schedule" aria-label="section-services-tab" data-bgimage="url(images-event/bg/6.jpg) top right no-repeat">
                 <div class="wm wm-border light wow fadeInDown ">schedule</div>
                 <div class="container">
@@ -767,7 +1066,7 @@
                     </div>
                 </div>
             </section>
-            <!-- section close -->
+           section close -->
 
 			<!-- section begin
             <section id="section-ticket" class="text-light" data-bgimage="url(images-event/bg/2.jpg) fixed top" data-stellar-background-ratio=".2">
