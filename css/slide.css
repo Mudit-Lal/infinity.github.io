@@ -1,5 +1,7 @@
 
-
+.social i{
+  font-size: 120%;
+}
 @media(min-width:768px) {
 	.dl-horizontal dt {
 		float: left;
