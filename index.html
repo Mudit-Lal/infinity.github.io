@@ -1297,10 +1297,52 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div id='message_error' class='error'>Please enter your message.</div>
+                                      <b>You will be attending the Conference as -</b>
+                                        <br>
+                                      <input type="radio" name="attendeetype" id="student" value="student">
+                                      <label for="student" style="font-weight:normal;">A Student</label>
+                                        <br>
+                                      <input type="radio" name="attendeetype" id="parent" value="parent">
+                                      <label for="parent" style="font-weight:normal;">A Parent</label>
+                                        <br>
+                                      <input type="radio" name="attendeetype" id="educator" name="gender" value="educator">
+                                      <label for="educator" style="font-weight:normal;">An Educator</label>
+                                        <br>
+                                      <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
+                                        <input type="radio" name="attendeetype" id="working" value="other">
+                                        <label for="other"  style="font-weight:normal;">Working Professional / Home-maker / Self-employed</label><br>
+                                        <input type="radio" name="attendeetype" id="plaksha" value="plaksha">
+                                        <label for="plaksha" style="font-weight:normal;">Plaksha Community</label>
+                                          <br>
+                                      </font>
+                                    </div>
+                                    <div class="col-md-6" style='visibility:hidden' id="schoolwala">
+                                        <div id='name_error' class='error'>Please enter Name of Institution</div>
                                         <div>
-                                            <textarea name='message' id='message' class="form-control" placeholder="Additional Message"></textarea>
+                                            <input type='text' name='name' id='name' class="form-control" placeholder="Please enter Name of Institution">
                                         </div>
+                                        <div>
+                                        <select name="grade" id="grade">
+                                          <option value="12">12</option>
+                                          <option value="11">11</option>
+                                          <option value="10">10</option>
+                                          <option value="9">9</option>
+                                          <option value="8">8</option>
+                                          <option value="other">Other</option>
+                                        </select>
+                                      </div>
+
+                                    </div>
+                                    <div class="col-md-6"  style='visibility:hidden' id="schoolwala">
+                                      <b>Institution Type -</b>
+                                        <br>
+                                      <input type="radio" id="school" value="school">
+                                      <label for="school" style="font-weight:normal;">School</label>
+                                        <br>
+                                      <input type="radio" id="college" value="college">
+                                      <label for="college" style="font-weight:normal;">College/University</label>
+                                        <br>
+                                      </font>
                                     </div>
 
                                     <div class="col-md-12 text-center">
