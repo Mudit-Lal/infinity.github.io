@@ -1299,30 +1299,34 @@
                                     <div class="col-md-6">
                                       <b>You will be attending the Conference as -</b>
                                         <br>
-                                      <input type="radio" name="attendeetype" id="student" value="student">
+                                      <input type="radio" name="attendeetype" id="student" value="student" class="student" onclick="show2();">
                                       <label for="student" style="font-weight:normal;">A Student</label>
                                         <br>
-                                      <input type="radio" name="attendeetype" id="parent" value="parent">
+                                      <input type="radio" name="attendeetype" id="parent" value="parent" onclick="show1();">
                                       <label for="parent" style="font-weight:normal;">A Parent</label>
                                         <br>
-                                      <input type="radio" name="attendeetype" id="educator" name="gender" value="educator">
+                                      <input type="radio" name="attendeetype" id="educator" name="gender" value="educator" onclick="show1();">
                                       <label for="educator" style="font-weight:normal;">An Educator</label>
                                         <br>
                                       <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
-                                        <input type="radio" name="attendeetype" id="working" value="other">
+                                        <input type="radio" name="attendeetype" id="working" value="other" onclick="show1();">
                                         <label for="other"  style="font-weight:normal;">Working Professional / Home-maker / Self-employed</label><br>
-                                        <input type="radio" name="attendeetype" id="plaksha" value="plaksha">
+                                        <input type="radio" name="attendeetype" id="plaksha" value="plaksha" onclick="show3();">
                                         <label for="plaksha" style="font-weight:normal;">Plaksha Community</label>
                                           <br>
                                       </font>
                                     </div>
-                                    <div class="col-md-6" style='visibility:hidden' id="schoolwala">
-                                        <div id='name_error' class='error'>Please enter Name of Institution</div>
+
+                                  <div class="col-md-12" style="display: none; transition: 0.5s;" id="schoolwala">
+                                    <hr>
+                                    <h2>Student</h2><br>
+                                    <div class="col-md-6">
+                                        <div id='name_error' class='error'>Please enter Name of Organization</div>
                                         <div>
                                             <input type='text' name='name' id='name' class="form-control" placeholder="Please enter Name of Institution">
                                         </div>
                                         <div>
-                                        <select name="grade" id="grade">
+                                        <select name="grade" id="grade" style="	padding:10px; margin-bottom:20px; color:#000; border:solid 1px rgba(0,0,0,.3); width: 100%; border-radius:0 !important; height:auto;">
                                           <option value="12">12</option>
                                           <option value="11">11</option>
                                           <option value="10">10</option>
@@ -1333,7 +1337,7 @@
                                       </div>
 
                                     </div>
-                                    <div class="col-md-6"  style='visibility:hidden' id="schoolwala">
+                                    <div class="col-md-6">
                                       <b>Institution Type -</b>
                                         <br>
                                       <input type="radio" id="school" value="school">
@@ -1342,10 +1346,52 @@
                                       <input type="radio" id="college" value="college">
                                       <label for="college" style="font-weight:normal;">College/University</label>
                                         <br>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-12" style="display: none; transition: 0.5s;" id="details">
+                                    <hr>
+                                    <h2>Details</h2><br>
+                                    <div class="col-md-6">
+                                        <div id='name_error' class='error'>Organizational affiliation </div>
+                                        <div>
+                                            <input type='text' name='name' id='name' class="form-control" placeholder="Please enter Name of Institution">
+                                        </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-12" style="display: none; transition: 0.5s;" id="extraq">
+                                    <hr>
+                                    <h2>Extra Qs</h2><br>
+                                    <div class="col-md-6">
+                                      <b>Which track are you most excited about?</b>
+                                        <br>
+                                        <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
+                                      <input type="radio" name="attendeetype" id="student" value="student" class="student">
+                                      <label for="student" style="font-weight:normal;">Future of Tech Education</label>
+                                        <br>
+                                      <input type="radio" name="attendeetype" id="parent" value="parent">
+                                      <label for="parent" style="font-weight:normal;">Tinker. Create. Solve</label>
+                                        <br>
+                                      <input type="radio" name="attendeetype" id="educator" name="gender" value="educator">
+                                      <label for="educator" style="font-weight:normal;">One Education. Many Paths!</label>
+                                        <br>
+                                        <input type="radio" name="attendeetype" id="working" value="other">
+                                        <label for="other"  style="font-weight:normal;">Stories which inspire!</label><br>
+                                        <input type="radio" name="attendeetype" id="plaksha" value="plaksha">
+                                        <label for="plaksha" style="font-weight:normal;">Plaksha Community</label>
+                                          <br>
                                       </font>
                                     </div>
+                                    <div class="col-md-6">
+                                      <b>Do you have any questions for us?</b>
+                                        <div>
+                                            <textarea name="message" id="message" class="form-control" placeholder="Add them here!"></textarea>
+                                        </div>
+                                    </div>
+                                  </div>
 
-                                    <div class="col-md-12 text-center">
+                                    <div class="col-md-12 text-center"><br>
                                         <p id='submit'>
                                             <input type='submit' id='send_message' value='Register Now' class="btn btn-line">
                                         </p>
@@ -1472,6 +1518,23 @@
     <script src="js/jquery.countdown.js"></script>
     <script src="js/countdown-custom.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    function show1(){
+      document.getElementById('schoolwala').style.display ='none';
+      document.getElementById('details').style.display ='block';
+      document.getElementById('extraq').style.display ='block';
+    }
+    function show2(){
+      document.getElementById('schoolwala').style.display = 'block';
+      document.getElementById('details').style.display ='none';
+      document.getElementById('extraq').style.display ='block';
+    }
+    function show3(){
+      document.getElementById('schoolwala').style.display = 'none';
+      document.getElementById('details').style.display ='none';
+      document.getElementById('extraq').style.display ='block';
+    }
+    </script>
 
   	<script>
       $(window).on("load", function(){
