@@ -5935,7 +5935,7 @@ right:-15px;
     bottom: 40px;
     right: 40px;
     z-index: 999;
-    width: 32px;
+    width: 182px;
     height: 32px;
     text-align: center;
     line-height: 30px;
@@ -5957,16 +5957,83 @@ right:-15px;
 #back-to-top:before{
 	font-family:"FontAwesome";
 	font-size:22px;
+	content:"\f044";
+	color:#222;
+	position:relative;
+	margin:3px;
+}
+
+#back-to-top b{
+	font-family:"Open Sans";
+	font-size:18px;
 	content:"\f106";
 	color:#222;
 	position:relative;
-	margin:5px;
+	margin:3px;
 }
+
 #back-to-top:hover:before{
 	color:#fff;
 }
 
 #back-to-top.custom-1:before{
+	color:#fff;
+}
+
+#register-click {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    width: 182px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #007878;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+		transition: 0.3s;
+    opacity: 0;
+	outline:none;
+	border-style: solid;
+	border-color: white;
+	border-radius: 4px;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+#register-click:hover {
+    background: #111;
+}
+#register-click.show {
+    opacity: 1;
+}
+#register-click:before{
+	font-family:"FontAwesome";
+	font-size:22px;
+	content:"\f044";
+	color:#222;
+	position:relative;
+	margin:3px;
+}
+
+#register-click b{
+	font-family:"Open Sans";
+	font-size:18px;
+	content:"\f106";
+	color:#222;
+	position:relative;
+	margin:3px;
+}
+
+#register-click:hover:before{
+	color:#fff;
+}
+
+#register-click.custom-1:before{
 	color:#fff;
 }
 
