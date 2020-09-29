@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="fonts/elegant_font/HTML_CSS/style.css" type="text/css">
     <link rel="stylesheet" href="fonts/et-line-font/style.css" type="text/css">
+    <link rel="stylesheet" href="css/confetti.css">
 
 	<!-- custom font -->
 	<link rel="stylesheet" href="css/font-style.css" type="text/css">
@@ -61,6 +62,7 @@
 </head>
 
 <body id="homepage" class="de_light">
+  <canvas height='1' id='confetti' width='1'></canvas>
 
     <div id="wrapper">
 
@@ -123,7 +125,7 @@
                 <hr>
 								<h3 style="font-size:2vh"><font  style="background: -webkit-linear-gradient(#00A0B4, #a3b77c); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Thank you for your interest in learning more about Plaksha!<br>You will be emailed the joining link a few days before the event</font></h3>
                 <div class="spacer-single"></div>
-                <a href="index.html" class="btn-custom text-white scroll-to">Go back to homepage</a>
+                <a href="index.html" class="btn-custom text-white" style="z-index:999; position:relative;">Go back to homepage</a>
 								<div class="spacer-double"></div>
 							</div>
 						</div>
@@ -167,8 +169,6 @@
                     </div>
                 </div>
             </div>
-
-            <a href="#section-register" id="register-click" class="custom-1"><b style="color:white;">REGISTER NOW</b></a>
         </footer>
         <!-- footer close -->
         </div>
@@ -198,38 +198,7 @@
     <script src="js/jquery.countdown.js"></script>
     <script src="js/countdown-custom.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
-    <script>
-    function show1(){
-      document.getElementById('schoolwala').style.display ='none';
-      document.getElementById('details').style.display ='block';
-      document.getElementById('extraq').style.display ='block';
-      document.getElementById('nameinstitution').required = false;
-      document.getElementById('schooltype').required = false;
-      document.getElementById('grade').required = false;
-      document.getElementById('orgname').required = true;
-      document.getElementById('designation').required = true;
-    }
-    function show2(){
-      document.getElementById('schoolwala').style.display = 'block';
-      document.getElementById('details').style.display ='none';
-      document.getElementById('extraq').style.display ='block';
-      document.getElementById('nameinstitution').required = true;
-      document.getElementById('schooltype').required = true;
-      document.getElementById('grade').required = true;
-      document.getElementById('orgname').required = false;
-      document.getElementById('designation').required = false;
-    }
-    function show3(){
-      document.getElementById('schoolwala').style.display = 'none';
-      document.getElementById('details').style.display ='none';
-      document.getElementById('extraq').style.display ='block';
-      document.getElementById('nameinstitution').required = false;
-      document.getElementById('schooltype').required = false;
-      document.getElementById('grade').required = false;
-      document.getElementById('orgname').required = false;
-      document.getElementById('designation').required = false;
-    }
-    </script>
+    <script  src="js/confetti.js"></script>
 
   	<script>
       $(window).on("load", function(){
