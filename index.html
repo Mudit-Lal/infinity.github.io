@@ -272,14 +272,14 @@
             <div class="container">
                 <div class="row">
             <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                        <h1>Meet our high powered Speakers</h1>
+                        <h1>The Speakers</h1>
                         <div class="separator"><span><i class="fa fa-square" style="color:#FFFFFF;"></i></span></div>
                         <div class="spacer-single"></div>
                     </div>
 
             <div class="clearfix"></div>
                         <div class="bs-example">
-                            <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+                            <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel"  style="align:center !important;">
                             	<!-- Carousel indicators
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -1264,7 +1264,8 @@
                 </div>
             </section>
           section close -->
-
+          <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thankyou.html';}"></iframe>
 			<!-- section begin -->
             <section id="section-register" class="text-light" data-bgcolor="#222222">
                 <div class="wm wm-border dark wow fadeInDown">register</div>
@@ -1277,7 +1278,7 @@
                         </div>
 
                         <div class="col-md-8 offset-md-2 wow fadeInUp">
-                            <form id='contact_form' action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde2G3_z7CSi5r8ugGxF2v7uZGE5bRGmVYStuksz_X3EEczTA/formResponse">
+                            <form id='contact_form' name="registerform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde2G3_z7CSi5r8ugGxF2v7uZGE5bRGmVYStuksz_X3EEczTA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div id='name_error' class='error'>Please enter your name.</div>
@@ -1287,7 +1288,7 @@
 
                                         <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
                                         <div>
-                                            <input type='text' name='entry.203248162' id='email' class="form-control" placeholder="Your Email" required>
+                                            <input type='email' name='entry.203248162' id='email' class="form-control" placeholder="Your Email" required>
                                         </div>
 
                                         <div id='phone_error' class='error'>Please enter your phone number.</div>
@@ -1299,7 +1300,7 @@
                                       <b>You will be attending the Conference as -</b>
                                         <br>
                                       <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
-                                        <input type="radio" name="entry.1025921152" id="e1" value="Student" onclick="show2();">
+                                        <input type="radio" name="entry.1025921152" id="e1" value="Student" onclick="show2();" required>
                                         <label for="e1" style="font-weight:normal;">Student</label>
                                           <br>
                                         <input type="radio" name="entry.1025921152" id="e2" value="Parent" onclick="show1();">
@@ -1323,7 +1324,7 @@
                                     <div class="col-md-6">
                                         <div class='error'>Please enter Name of Institution</div>
                                         <div>
-                                            <input type='text' name="entry.1962052190" class="form-control" placeholder="Please enter Name of Institution">
+                                            <input type='text' name="entry.1962052190" id="nameinstitution" class="form-control" placeholder="Please enter Name of Institution">
                                         </div>
                                         <div>
                                         <select name="entry.1427554743" id="grade" style="	padding:10px; margin-bottom:20px; color:#000; border:solid 1px rgba(0,0,0,.3); width: 100%; border-radius:0 !important; height:auto;">
@@ -1340,7 +1341,7 @@
                                     <div class="col-md-6">
                                       <b>Institution Type -</b>
                                         <br>
-                                      <input type="radio" id="school" value="School" name="entry.1624871702">
+                                      <input type="radio" id="schooltype" value="School" name="entry.1624871702">
                                       <label for="school" style="font-weight:normal;">School</label>
                                         <br>
                                       <input type="radio" id="college" value="College/University" name="entry.1624871702">
@@ -1348,7 +1349,6 @@
                                         <br>
                                     </div>
                                   </div>
-                                </div>
 
                                   <div class="col-md-12" style="display: none; transition: 0.5s;" id="details">
                                     <hr>
@@ -1356,10 +1356,10 @@
                                     <div class="col-md-6">
                                         <div id='name_error' class='error'>Organizational affiliation </div>
                                         <div>
-                                            <input type='text' name='entry.1916591876' id='name' class="form-control" placeholder="Please enter the name of Organization">
+                                            <input type='text' name='entry.1916591876' id='orgname' class="form-control" placeholder="Please enter the name of Organization">
                                         </div>
                                         <div>
-                                            <input type='text' name='entry.1608252787' id='name' class="form-control" placeholder="Please enter your designation">
+                                            <input type='text' name='entry.1608252787' id='designation' class="form-control" placeholder="Please enter your designation">
                                         </div>
                                     </div>
                                   </div>
@@ -1371,7 +1371,7 @@
                                       <b>Which track are you most excited about?</b>
                                         <br>
                                         <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
-                                      <input type="radio" name="entry.1932211848" id="e7" value="Future of Tech Education">
+                                      <input type="radio" name="entry.1932211848" id="e7" value="Future of Tech Education" required>
                                       <label for="e7" style="font-weight:normal;">Future of Tech Education</label>
                                         <br>
                                       <input type="radio" name="entry.1932211848" id="e8" value="Tinker. Create. Solve.">
@@ -1392,6 +1392,7 @@
                                         </div>
                                     </div>
                                   </div>
+                                </div>
 
                                     <div class="col-md-12 text-center"><br>
                                         <p id='submit'>
@@ -1523,16 +1524,31 @@
       document.getElementById('schoolwala').style.display ='none';
       document.getElementById('details').style.display ='block';
       document.getElementById('extraq').style.display ='block';
+      document.getElementById('nameinstitution').required = false;
+      document.getElementById('schooltype').required = false;
+      document.getElementById('grade').required = false;
+      document.getElementById('orgname').required = true;
+      document.getElementById('designation').required = true;
     }
     function show2(){
       document.getElementById('schoolwala').style.display = 'block';
       document.getElementById('details').style.display ='none';
       document.getElementById('extraq').style.display ='block';
+      document.getElementById('nameinstitution').required = true;
+      document.getElementById('schooltype').required = true;
+      document.getElementById('grade').required = true;
+      document.getElementById('orgname').required = false;
+      document.getElementById('designation').required = false;
     }
     function show3(){
       document.getElementById('schoolwala').style.display = 'none';
       document.getElementById('details').style.display ='none';
       document.getElementById('extraq').style.display ='block';
+      document.getElementById('nameinstitution').required = false;
+      document.getElementById('schooltype').required = false;
+      document.getElementById('grade').required = false;
+      document.getElementById('orgname').required = false;
+      document.getElementById('designation').required = false;
     }
     </script>
 
