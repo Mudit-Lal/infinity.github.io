@@ -1,4 +1,4 @@
-Open Sans/* ================================================== */
+/* ================================================== */
 /* created by designesia
 
 * body
@@ -6015,7 +6015,7 @@ right:-15px;
     bottom: 40px;
     right: 40px;
     z-index: 999;
-    width: 182px;
+    width: 182px !important;
     height: 32px;
     text-align: center;
     line-height: 30px;
