@@ -3992,6 +3992,16 @@ border:solid 1px #ddd;
 	position:absolute;
 	}
 
+	.team-pic:after {
+		content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 120, 120, 0.2), rgba(156, 181, 132, 0.4));
+	}
+
 	.team-list h5{
 	margin-top:0;
 	margin-bottom:10px;
