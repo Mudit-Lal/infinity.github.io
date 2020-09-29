@@ -1283,12 +1283,12 @@
                                     <div class="col-md-6">
                                         <div id='name_error' class='error'>Please enter your name.</div>
                                         <div>
-                                            <input type='text' name='entry.492611271' id='name' class="form-control" placeholder="Your Name">
+                                            <input type='text' name='entry.492611271' id='name' class="form-control" placeholder="Your Name" required>
                                         </div>
 
                                         <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
                                         <div>
-                                            <input type='text' name='entry.492611271' id='email' class="form-control" placeholder="Your Email">
+                                            <input type='text' name='entry.203248162' id='email' class="form-control" placeholder="Your Email" required>
                                         </div>
 
                                         <div id='phone_error' class='error'>Please enter your phone number.</div>
@@ -1299,20 +1299,24 @@
                                     <div class="col-md-6">
                                       <b>You will be attending the Conference as -</b>
                                         <br>
-                                      <input type="radio" name="entry.1025921152" id="student" value="student" class="student" onclick="show2();">
-                                      <label for="student" style="font-weight:normal;">A Student</label>
-                                        <br>
-                                      <input type="radio" name="entry.1025921152" id="parent" value="parent" onclick="show1();">
-                                      <label for="parent" style="font-weight:normal;">A Parent</label>
-                                        <br>
-                                      <input type="radio" name="entry.1025921152" id="educator" value="educator" onclick="show1();">
-                                      <label for="educator" style="font-weight:normal;">An Educator</label>
-                                        <br>
                                       <font style="display:inline-block;  white-space: nowrap; overflow-x: auto; overflow-y: hidden;">
-                                        <input type="radio" name="entry.1025921152" id="working" value="other" onclick="show1();">
-                                        <label for="other"  style="font-weight:normal;">Working Professional / Home-maker / Self-employed</label><br>
-                                        <input type="radio" name="entry.1025921152" id="plaksha" value="plaksha" onclick="show3();">
-                                        <label for="plaksha" style="font-weight:normal;">Plaksha Community</label>
+                                        <input type="radio" name="entry.1025921152" id="e1" value="School student" onclick="show2();">
+                                        <label for="e1" style="font-weight:normal;">School Student</label>
+                                          <br>
+                                        <input type="radio" name="entry.1025921152" id="e2" value="A parent" onclick="show1();">
+                                        <label for="e2" style="font-weight:normal;">A Parent</label>
+                                          <br>
+                                        <input type="radio" name="entry.1025921152" id="e3" value="An educator" onclick="show1();">
+                                        <label for="e3" style="font-weight:normal;">An Educator</label>
+                                          <br>
+                                        <input type="radio" name="entry.1025921152" id="e4" value="Working Professional / Home-maker / Self-employed" onclick="show1();">
+                                        <label for="e4"  style="font-weight:normal;">Working Professional / Home-maker / Self-employed</label>
+                                          <br>
+                                        <input type="radio" name="entry.1025921152" id="e5" value="Plaksha Community" onclick="show3();">
+                                        <label for="e5" style="font-weight:normal;">Plaksha Community</label>
+                                          <br>
+                                        <input type="radio" name="entry.1025921152" id="e6" value="College student" onclick="show2();">
+                                        <label for="e1" style="font-weight:normal;">College student</label>
                                           <br>
                                       </font>
                                     </div>
@@ -1326,7 +1330,7 @@
                                             <input type='text' name="entry.1962052190" id='name' class="form-control" placeholder="Please enter Name of Institution">
                                         </div>
                                         <div>
-                                        <select name="grade" id="grade" style="	padding:10px; margin-bottom:20px; color:#000; border:solid 1px rgba(0,0,0,.3); width: 100%; border-radius:0 !important; height:auto;">
+                                        <select name="entry.1427554743" id="grade" style="	padding:10px; margin-bottom:20px; color:#000; border:solid 1px rgba(0,0,0,.3); width: 100%; border-radius:0 !important; height:auto;">
                                           <option value="12" name="entry.1427554743">12</option>
                                           <option name="entry.1427554743" value="11">11</option>
                                           <option name="entry.1427554743" value="10">10</option>
@@ -1340,10 +1344,10 @@
                                     <div class="col-md-6">
                                       <b>Institution Type -</b>
                                         <br>
-                                      <input type="radio" id="school" value="school" name="entry.1624871702">
+                                      <input type="radio" id="school" value="School" name="entry.1624871702">
                                       <label for="school" style="font-weight:normal;">School</label>
                                         <br>
-                                      <input type="radio" id="college" value="college/university" name="entry.1624871702">
+                                      <input type="radio" id="college" value="College/University" name="entry.1624871702">
                                       <label for="college" style="font-weight:normal;">College/University</label>
                                         <br>
                                     </div>
