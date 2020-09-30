@@ -2109,12 +2109,12 @@ border:solid 1px #ddd;
 	/* ------------------------------ */
 	.de_count{
 	text-align:center;
-	padding:30px 0 30px 0;
+	padding:30px 0 0 0;
 	background:none;
 	}
 	.de_count h3{
 	font-family:"Open Sans", Arial, Helvetica, sans-serif;
-	font-size:40px;
+	font-size:3vh;
 	}
 	.de_light .de_count h3{
 	font-family:"Open Sans";
@@ -2126,9 +2126,9 @@ border:solid 1px #ddd;
 	}
 	.de_count i{
 		display:block;
-		font-size:60px;
+		font-size:5vh;
 		margin:0 auto;
-		margin-bottom:20px;
+		margin-bottom:15px;
 		width:100%;
 		background: -webkit-linear-gradient(#00A0B4, #a3b77c);
 		-webkit-background-clip: text;
