@@ -2864,10 +2864,12 @@ border:solid 1px #ddd;
 	.box-number.square .number,
 	.box-number.square i{
 	border-radius:0;
+	margin-left: -40px;
 	}
 
 	.box-number .text{
-	margin-left:100px;
+	padding-top:100px;
+	position: relative;
 	}
 
 	.box-icon .icon{
@@ -2885,7 +2887,6 @@ border:solid 1px #ddd;
 	}
 
 	.box-icon .text{
-	margin-left:80px;
 	}
 
 	.box-icon.line{
