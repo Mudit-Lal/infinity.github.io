@@ -2109,7 +2109,7 @@ border:solid 1px #ddd;
 	/* ------------------------------ */
 	.de_count{
 	text-align:center;
-	padding:3vh 0 3vh 0;
+	padding:3vh 0 0 0;
 	background:none;
 	}
 	.de_count h3{
