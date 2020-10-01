@@ -73,6 +73,20 @@
 }
     </style>
 
+<script>
+$(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+<script>
+function popupclose() {
+  $('#myModal').modal('hide');
+  $('html, body').animate({
+        scrollTop: $("#section-register").offset().top
+    }, 2000);
+}
+
+</script>
 </head>
 
 <body id="homepage" class="de_light">
@@ -251,7 +265,6 @@
       				</div>
       			</section>
             <!-- section close -->
-
 			<section id="section-about" data-bgimage="url(images-event/bg/4.jpg) top left no-repeat">
 				<div class="wm wm-border light wow fadeInDown">about</div>
                     <div class="container">
@@ -283,7 +296,28 @@
 
 
 				<!-- section begin -->
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" data-bgcolor="#222222" style="opacity: 0.9;">
 
+              <!-- Modal Header -->
+              <div class="modal-header" style="white-space: wrap; border: 0; padding-top: 0;">
+                <h4 style="color: #ffffff; padding-top:70px; text-transform: uppercase; margin-left: 45px; align: center;">Unravel the Future of Technology!</h4>
+                <img class="modal-title" src="images-event/topright.png" style="max-height: 7vh; position: absolute; padding-top: 10px;">
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+
+              </div>
+
+
+              <!-- Modal footer -->
+              <div class="modal-footer" style="margin-top: 0; border: 0; padding-top: 5px;">
+                <button onclick="popupclose();" href="#section-register" class="scroll-to btw" style="font-family: 'Open Sans'; opacity: 1; padding: 8px 20px 8px 20px; background: #007878; color: #ffffff; margin: auto; display: inline-block; letter-spacing: 3px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 0px;">REGISTER NOW!</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
             <!-- section close -->
 
             <section id="section-speakers" class="text-light" data-bgcolor="#007878" data-stellar-background-ratio=".2">
@@ -1524,6 +1558,7 @@ Start-ups which are profitably dealing with real-life obstacles would be prosper
         $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
       });
     </script>
+
 
 </body>
 </html>
