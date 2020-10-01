@@ -1620,13 +1620,15 @@ border:solid 1px #ddd;
 	}
 
 	#contact_form input[type=submit].btn-line{
-	background:none;
+	background:#fff;
+	color: #007878;
 	padding:8px 20px;
 	}
 
 	#contact_form input[type=submit].btn-line:hover{
 	background:#111;
 	border-color:#111;
+	color: #fff;
 	}
 
 	#contact_form textarea{
