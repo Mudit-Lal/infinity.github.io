@@ -1612,7 +1612,17 @@ border:solid 1px #ddd;
 		color:#333 !important;
 		}
 
+		#brochure a{
+		background:#fff;
+		color: #007878;
+		padding:8px 20px;
+		}
 
+		#brochure a:hover{
+		background:#111;
+		border-color:#111;
+		color: #fff;
+		}
 
 
 	#contact_form input[placeholder],#contact_form textarea[placeholder]{
