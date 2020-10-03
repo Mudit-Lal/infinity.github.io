@@ -566,13 +566,13 @@ overflow:visible;
 	color:#fff;
 	}
 
-	#mainmenu li a:after { float:right; position:relative; font-family:"FontAwesome"; content:"\f111"; font-size:6px; margin-left:20px; margin-top:0px; color:#FAB702; }
+	#mainmenu li a:after { float:right; position:relative; font-family:"FontAwesome"; content:"\00a0"; font-size:6px; margin-left:20px; margin-top:0px; color:#FAB702; }
 
 	#mainmenu li:last-child a:after{display:none;}
 
 
 	#mainmenu.dotted-separator li a:after{
-	content:"\f111";
+	content:"\00a0";
 	font-size:6px;
 	}
 
@@ -5341,6 +5341,7 @@ color:#606060;
 	-webkit-user-select:none;-moz-user-select:-moz-none;
 	-ms-user-select:none;user-select:none;
 }
+
 
 .wm.dark{
 	color:rgba(255,255,255,.1);
