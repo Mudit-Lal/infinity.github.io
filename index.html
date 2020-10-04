@@ -73,6 +73,35 @@
         text-shadow: 0 0 3px #fff, 0 0 5px #00A0B4, 0 0 7px #00A0B4, 0 0 9px #00A0B4, 0 0 11px #00A0B4, 0 0 13px #00A0B4, 0 0 15px #00A0B4;
       }
     }
+
+    @media only screen and (max-width: 768px) {
+    #titlish span{
+        font-size: 25px;
+      }
+
+    #titlishunder span{
+      font-size: 15px;
+    }
+    }
+
+    @media only screen and (min-width: 768px) {
+    #titlish span{
+        font-size: 40px;
+      }
+
+    #titlishunder span{
+      font-size: 25px;
+    }
+    }
+
+    @media only screen and (max-width: 320px) {
+    #titlish span{
+        font-size: 20px;
+      }
+    #titlishunder span{
+      font-size: 15px;
+    }
+    }
   </style>
 
   <script>
@@ -167,9 +196,14 @@
               <h1 class="title-3">
                 <img src="images-event/infinitycrop.gif" style="max-width:90vw;">
               </h1>
-              <h3 style="padding-top:1vh;">
-                <font style="font-size:3vw; margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Reinventing Tech Education</font><br>
-                <font style="font-size:2vw; margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Virtual Conference | 16 - 18 Oct, 2020</font>
+              <h3 style="padding-top:auto;">
+                <font id="titlish" style="padding-top: 15px; padding-bottom: 10px;background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                  <span>Reinventing Tech Education</span>
+                </font>
+                <br>
+                <font id="titlishunder" style="margin-bottom: 0; background: -webkit-linear-gradient(#00A0B4, #007878); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                  <span>Virtual Conference | 16 - 18 Oct, 2020</span>
+                </font>
               </h3>
             </div>
             <!--
