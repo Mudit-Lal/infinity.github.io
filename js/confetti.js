@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
       colors = [
         ["#df0049", "#660671"],
         ["#00e857", "#005291"],
-        ["#2bebbc", "#05798a"],
+        ["#00A0B4", "#007878"],
         ["#ffd200", "#b06c00"]
       ];
 
