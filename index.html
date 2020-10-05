@@ -1554,7 +1554,7 @@
                     <input type="radio" name="entry.1025921152" id="e1" value="Student" onclick="show2();" required>
                     <label for="e1" style="font-weight:normal;">Student</label>
                     <br>
-                    <input type="radio" name="entry.1025921152" id="e2" value="Parent" onclick="show1();">
+                    <input type="radio" name="entry.1025921152" id="e2" value="Parent" onclick="show4();">
                     <label for="e2" style="font-weight:normal;">Parent</label>
                     <br>
                     <input type="radio" name="entry.1025921152" id="e3" value="Educator" onclick="show1();">
@@ -1562,9 +1562,6 @@
                     <br>
                     <input type="radio" name="entry.1025921152" id="e4" value="Working Professional / Self-Employed" onclick="show1();">
                     <label for="e4" style="font-weight:normal;">Working Professional / Self-employed</label>
-                    <br>
-                    <input type="radio" name="entry.1025921152" id="e6" value="Home-maker" onclick="show3();">
-                    <label for="e6" style="font-weight:normal;">Home-maker</label>
                     <br>
                     <input type="radio" name="entry.1025921152" id="e5" value="Plaksha Community" onclick="show3();">
                     <label for="e5" style="font-weight:normal;">Plaksha Community</label>
@@ -1746,6 +1743,17 @@
     function show3() {
       document.getElementById('schoolwala').style.display = 'none';
       document.getElementById('details').style.display = 'none';
+      document.getElementById('extraq').style.display = 'block';
+      document.getElementById('nameinstitution').required = false;
+      document.getElementById('schooltype').required = false;
+      document.getElementById('grade').required = false;
+      document.getElementById('orgname').required = false;
+      document.getElementById('designation').required = false;
+    }
+
+    function show4() {
+      document.getElementById('schoolwala').style.display = 'none';
+      document.getElementById('details').style.display = 'block';
       document.getElementById('extraq').style.display = 'block';
       document.getElementById('nameinstitution').required = false;
       document.getElementById('schooltype').required = false;
