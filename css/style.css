@@ -2131,10 +2131,11 @@ border:solid 1px #ddd;
 	.de_light .de_count h3{
 	font-family:"Open Sans";
 	font-weight:500;
-	color: #007878;
+	color: #FFFFFF;
 	}
 	.de_count span{
 	text-transform:uppercase;
+	color: #FFFFFF;
 	}
 	.de_count i{
 		display:block;
@@ -2142,7 +2143,7 @@ border:solid 1px #ddd;
 		margin:0 auto;
 		margin-bottom:15px;
 		width:100%;
-		background: -webkit-linear-gradient(#00A0B4, #007878);
+		background: -webkit-linear-gradient(#F2F2F2, #E5E5E5);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
