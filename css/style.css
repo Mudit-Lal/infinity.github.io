@@ -269,7 +269,7 @@ overflow:visible;
 	}
 	header.smaller:not(.header-bottom):not(.side-header){
 	height: 70px;
-	background:#18191b;
+	background:linear-gradient(135deg,#000000, #333333)
 	}
 	header.smaller.no-border:not(.header-bottom):not(.side-header){
 	border:none;
