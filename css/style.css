@@ -269,7 +269,7 @@ overflow:visible;
 	}
 	header.smaller:not(.header-bottom):not(.side-header){
 	height: 70px;
-	background:linear-gradient(135deg,#000000, #333333)
+	background:-webkit-linear-gradient(315deg,#000000,#191919, #333333);"
 	}
 	header.smaller.no-border:not(.header-bottom):not(.side-header){
 	border:none;
