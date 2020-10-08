@@ -47,6 +47,7 @@
   <!-- color scheme -->
   <link rel="stylesheet" href="css/colors/green.css" type="text/css" id="colors">
   <link rel="stylesheet" href="css/color.css" type="text/css">
+  <link rel="stylesheet" href="css/venn.css" type="text/css">
 
   <!-- load fonts -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
@@ -69,6 +70,10 @@
 
       #section-hero .container {
         padding: 10vh 0px 5vh 0px;
+      }
+
+      #section-testimonials .container {
+        zoom: 0.6;
       }
     }
 
@@ -265,6 +270,43 @@
 
           </div>
         </div>
+      </section>
+
+      <section id="section-testimonials" aria-label="section" data-bgcolor="#FFFFFF" style="padding-bottom: 500px;">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+        			<div class="custom_box">
+          <div id="circle1" class="circle">
+             <div class="title">Design</div>
+             <div class="content">
+              <span class="hidden-sm">Design not only makes something pretty, but it enhances the user's experience. </span>
+
+             </div>
+          </div>
+          <div id="circle2" class="circle2 circle">
+             <div class="title">Development</div>
+             <div class="content">
+                <span class="hidden-sm">
+                  An enhanced experience is only possible if it exists on a platform built on the web.
+                </span>
+
+              </div>
+          </div>
+          <div id="circle3" class="circle3 circle">
+             <div class="title">Business</div>
+              <div class="content">
+                <span class="hidden-sm">
+                  An organization engages this experience in commercial, industrial or professional activities.
+                </span>
+
+              </div>
+          </div>
+        <div id="better-result" class="hide-title"><img src="images-event/nchar.gif"></div>
+        </div>
+      </div>
+    </div>
+  </div>
       </section>
 
       <section id="section-features">
@@ -1564,6 +1606,7 @@
   <script src="js/jquery.countdown.js"></script>
   <script src="js/countdown-custom.js"></script>
   <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/venn.js"></script>
   <script>
     function hidebutton() {
       document.getElementById('register-click').style.visibility = "hidden";
