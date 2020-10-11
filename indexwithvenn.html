@@ -99,6 +99,16 @@
     #ontopdesig {
       text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.8);
     }
+    @keyframes glowing {
+  0% { box-shadow: 0 0 -10px #FFFFFF; }
+  40% { box-shadow: 0 0 20px #FFFFFF; }
+  60% { box-shadow: 0 0 20px #FFFFFF; }
+  100% { box-shadow: 0 0 -10px #FFFFFF; }
+}
+
+.button-glow {
+  animation: glowing 3000ms infinite;
+}
   </style>
 
   <script>
@@ -1629,7 +1639,7 @@
         </div>
 
         <div class="col-lg-4 col-md-5 text-right" id="brochure" style="background-size: cover;">
-          <a href="https://discord.gg/PsPdXRG" class="btn-custom"><i class="fab fa-discord"></i>&nbsp;JOIN THE DISCORD SERVER</a>
+          <a href="https://discord.gg/PsPdXRG" class="btn-custom button-glow"><i class="fab fa-discord"></i>&nbsp;JOIN THE DISCORD SERVER</a>
         </div>
       </div>
     </div>
