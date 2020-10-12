@@ -998,6 +998,7 @@
           </div>
         </div>
       </div>
+
       <!-- section close -->
 
       <!--section begin -->
@@ -1468,21 +1469,19 @@
     </div>
     </section>
     <!--section close -->
-
     <section id="call-to-action" class="gradient-to-right text-light call-to-action" aria-label="cta" style="background-size: cover;" onmousemove="showbutton()" ontouchstart="showbutton()">
       <div class="container" style="background-size: cover;">
         <div class="row align-items-center" style="background-size: cover;">
           <div class="col-lg-8 col-md-7" style="background-size: cover;">
-            <h3 class="size-2 no-margin">Check out our brochure for the detailed agenda</h3>
+            <h3 class="size-2 no-margin">Check out our brochur for the detailed schedule</h3>
           </div>
-
-          <div class="col-lg-4 col-md-5 text-right" id="brochure" style="background-size: cover;">
-            <a href="" class="btn-custom"><i class="fas fa-download"></i> Download now</a>
+          <div class="col-lg-4 col-md-5 text-right" id="brochure" style="background-size: cover;" onclick="viewbook();">
+            <a class="btn-custom"><i class="fas fa-calendar-day"></i> View Schedule</<a href=""></a>
           </div>
         </div>
       </div>
     </section>
-
+    <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=vh8vl53xu3" style="display: none;" width="100%" height="680" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen id="flipbook"></iframe>
     <script type="text/javascript">
       var submitted = false;
     </script>
@@ -1750,6 +1749,10 @@
       document.getElementById('grade').required = false;
       document.getElementById('orgname').required = false;
       document.getElementById('designation').required = false;
+    }
+
+    function viewbook() {
+      document.getElementById('flipbook').style.display = 'block';
     }
   </script>
 
