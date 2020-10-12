@@ -329,13 +329,13 @@
 
             <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
               <div class="de-images">
-                <img class="di-small wow fadeIn" src="images-event/misc/1.jpg" alt="" />
-                <img class="di-small-2" src="images-event/misc/YTSproject.jpg" alt="" />
+                <img class="di-small wow fadeIn" id="overlayimage" src="images-event/misc/1.jpg" alt="" />
+                <img class="di-small-2" id="overlayimage2" src="images-event/misc/YTSproject.jpg" alt="" />
                 <!--<img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images-event/misc/YTSgroup.jpg" alt="" />-->
                 <div class="img-fluid wow fadeInRight embed-responsive embed-responsive-4by4 mbl-video" st>
-		            <a href='javascript:void();'><i class="fa fa-play-circle-o fa-4x centered"></i></a>
+		            <a class="button" href='javascript:void();' id="play-button"><i class="fa fa-play-circle-o fa-4x centered"></i></a>
                 <img src="images-event/thumbnail.png" style="max-width:100%;"/>
-      <!--<iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/Kp2TORalwjI?rel=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+      <!--<iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube-nocookie.com/embed/Kp2TORalwjI?rel=0&amp;showinfo=0;autoplay=1?" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>-->
                 </div>
 
               </div>
@@ -2217,6 +2217,9 @@
 
 		elm.addClass("player").html(ifr);
 		elm.off("click");
+    document.getElementById('overlayimage').style.display = 'none';
+    document.getElementById('overlayimage2').style.display = 'none';
+
 	});
 });
 </script>
