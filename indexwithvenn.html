@@ -350,8 +350,8 @@
                 <!--<img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images-event/misc/YTSgroup.jpg" alt="" />-->
                 <div class="img-fluid wow fadeInRight embed-responsive embed-responsive-4by4 mbl-video" st>
                   <a class="button" href='javascript:void();' id="play-button"><i class="fa fa-play-circle-o fa-4x centered"></i></a>
-                  <img src="images-event/misc/thumbnail16by9.png" style="max-width:100%;" />
-                  <!--<iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Kp2TORalwjI?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+                  <img src="images-event/misc/thumbnail16by9.png" style="max-width:100%; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" />
+                  <!--<iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Kp2TORalwjI?autoplay=1" frameborder="0" allowfullscreen style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"></iframe>-->
                 </div>
               </div>
 
@@ -2364,6 +2364,8 @@
 
         elm.addClass("player").html(ifr);
         elm.off("click");
+        document.getElementById('overlayimage').style.display = 'none';
+        document.getElementById('overlayimage2').style.display = 'none';
       });
     });
   </script>
